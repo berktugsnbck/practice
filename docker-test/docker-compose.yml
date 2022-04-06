@@ -1,0 +1,13 @@
+version: "3.2"
+services:
+  rabbit_mq:
+    image: rabbitmq:3.8-rc-management
+    container_name: rabbit_mq
+    ports:
+        - '5672:5672'
+        - '15672:15672'
+    volumes:
+      - rabbit_mqdata:/usr/share/rabbitmq/data
+volumes:
+    rabbit_mqdata:
+      driver: local

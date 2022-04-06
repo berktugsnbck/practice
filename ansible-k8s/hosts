@@ -1,0 +1,9 @@
+[masters]
+kube01p ansible_host=192.168.1.110 ansible_user=berktug
+
+[workers]
+kube02p ansible_host=192.168.1.120 ansible_user=berktug
+kube03p ansible_host=192.168.1.130 ansible_user=berktug
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
